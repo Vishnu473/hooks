@@ -19,7 +19,7 @@ const WindowSizeTracker = ({ desc }) => {
         timeStamp: Date.now(),
       };
 
-      setWindowSize((prev) => currentWindowSize);
+      setWindowSize(currentWindowSize);
       setResizeList((prevList) => {
         const updatedList = [currentWindowSize, ...prevList];
         return updatedList.slice(0, 5);
