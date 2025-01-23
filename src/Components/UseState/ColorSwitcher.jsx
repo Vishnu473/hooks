@@ -24,7 +24,7 @@ const ColorSwitcher = ({ desc }) => {
     >
       <h1>ColorSwitcher</h1>
       <p>{desc}</p>
-      <div className="hz-flex-container">
+      <div className="hz-grid-container">
         {colors.map((color, index) => {
           return (
             <button

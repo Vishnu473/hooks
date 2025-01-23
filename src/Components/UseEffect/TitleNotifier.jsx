@@ -31,8 +31,8 @@ const TitleNotifier = ({ desc }) => {
       <h1>TitleNotifier</h1>
       <p>{desc}</p>
       <div className="hz-flex-container">
-      <p>You can Enable/Disable this feature:</p>
-        <button className="btn" onClick={toggleBtn}>{isEnable ? 'Disable' : 'Enable'}</button>
+      <p>You can enable/disable this feature:</p>
+        <div><button className="btn" onClick={toggleBtn}>{isEnable ? 'Disable' : 'Enable'}</button></div>
       </div>
       <div className="center hz-flex-container">
         <input

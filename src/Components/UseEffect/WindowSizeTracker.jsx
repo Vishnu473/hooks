@@ -49,12 +49,11 @@ const WindowSizeTracker = ({ desc }) => {
       <div className="vt-flex-container">
         <h1>WindowSizeTracker</h1>
         <p>{desc}</p>
-        <div className="vt-flex-container">
           <div className="hz-flex-container">
             <p>You can enable/disable this feature:</p>
-            <button className="btn" onClick={handleToggle}>
+            <div><button className="btn" onClick={handleToggle}>
               {isEnable ? "Disable" : "Enable"}
-            </button>
+            </button></div>
           </div>
           {!isEnable ? (
             <p>Kindly enable to experience the project :)</p>
@@ -94,7 +93,6 @@ const WindowSizeTracker = ({ desc }) => {
               </div>
             </div>
           )}
-        </div>
         <div>
         <p>Topics used:</p>
         <div className="hz-flex-container">

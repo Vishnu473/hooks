@@ -31,12 +31,12 @@ const TodoCrud = ({ desc }) => {
       )
     );
     setEditId(null);
-    setEditText('');
+    setEditText("");
   };
 
   const deleteTodo = (id) => {
-    setTodoList(todoList.filter(todoItem => todoItem.id !== id));
-  }
+    setTodoList(todoList.filter((todoItem) => todoItem.id !== id));
+  };
 
   return (
     <>
@@ -71,13 +71,27 @@ const TodoCrud = ({ desc }) => {
                       className="input-block"
                       onChange={(e) => setEditText(e.target.value)}
                     />
-                    <button className="btn" onClick={saveTodo}>Save</button>
+                    <button className="btn" onClick={saveTodo}>
+                      Save
+                    </button>
                   </div>
                 ) : (
-                  <div className="hz-flex-container">
+                  <div className="hz-flex-container hz-flex-container-auto">
                     <p className="item">{todoItem.text}</p>
-                    <button className="btn" onClick={() => editTodo(todoItem)}>Edit</button>
-                    <button className="btn" onClick={() => deleteTodo(todoItem.id)}>Delete</button>
+                    <div className="hz-flex-container">
+                      <button
+                        className="btn"
+                        onClick={() => editTodo(todoItem)}
+                      >
+                        Edit
+                      </button>
+                      <button
+                        className="btn"
+                        onClick={() => deleteTodo(todoItem.id)}
+                      >
+                        Delete
+                      </button>
+                    </div>
                   </div>
                 )}
               </div>
@@ -85,11 +99,11 @@ const TodoCrud = ({ desc }) => {
           })}
         </div>
         <div>
-        <p>Topics used:</p>
-        <div className="hz-flex-container">
-          <p className="topic-covered">useState</p>
+          <p>Topics used:</p>
+          <div className="hz-flex-container">
+            <p className="topic-covered">useState</p>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );
