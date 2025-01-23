@@ -21,7 +21,7 @@ const InputCharCounter = ({ desc }) => {
       <div className="vt-flex-container">
         <h1>InputCharCounter</h1>
         <p>{desc}</p>
-        <div className="vt-flex-container center">
+        <div className="vt-flex-container ">
           <p>Characters Counted: {charCount}</p>
           <input
             type="text"

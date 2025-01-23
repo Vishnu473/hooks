@@ -48,7 +48,7 @@ const AutomaticCounter = ({ desc }) => {
         <h1>AutomaticCounter</h1>
         <p>{desc}</p>
         <div>
-          <div className="hz-flex-container center">
+          <div className="hz-flex-container ">
             <button className="btn" onClick={HandleStartPause}>{btnText}</button>
             <p className="value">{count}</p>
             <button className="btn" onClick={HandleReset}>Reset</button>

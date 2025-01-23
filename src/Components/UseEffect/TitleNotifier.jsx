@@ -34,7 +34,7 @@ const TitleNotifier = ({ desc }) => {
       <p>You can enable/disable this feature:</p>
         <div><button className="btn" onClick={toggleBtn}>{isEnable ? 'Disable' : 'Enable'}</button></div>
       </div>
-      <div className="center hz-flex-container">
+      <div className=" hz-flex-container">
         <input
           type="text"
           placeholder="type your name and see title"

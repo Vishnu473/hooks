@@ -43,8 +43,7 @@ const TodoCrud = ({ desc }) => {
       <div className="vt-flex-container">
         <h1>TodoCrud</h1>
         <p>{desc}</p>
-        <div className="vt-flex-container center">
-          <div className="hz-flex-container center">
+          <div className="hz-flex-container ">
             <input
               className="input-block"
               type="text"
@@ -59,7 +58,7 @@ const TodoCrud = ({ desc }) => {
           {todoList.length === 0 ? (
             <p>Add any todo to display</p>
           ) : (
-            <h1>Todo List</h1>
+            <h3>Todo List</h3>
           )}
           {todoList.map((todoItem) => {
             return (
@@ -97,7 +96,6 @@ const TodoCrud = ({ desc }) => {
               </div>
             );
           })}
-        </div>
         <div>
           <p>Topics used:</p>
           <div className="hz-flex-container">

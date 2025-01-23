@@ -58,8 +58,7 @@ const WindowSizeTracker = ({ desc }) => {
           {!isEnable ? (
             <p>Kindly enable to experience the project :)</p>
           ) : (
-            <div>
-              <div className="vt-flex-container center">
+            <div className="vt-flex-container">
                 <h3 style={{ color: isMobileSize ? "orangered" : "black" }}>
                   {isMobileSize
                     ? "WindowSize below this is for Mobile Devices"
@@ -68,8 +67,6 @@ const WindowSizeTracker = ({ desc }) => {
                 <p>
                   width: {windowSize.width}px and height: {windowSize.height}px
                 </p>
-              </div>
-              <div className="vt-flex-container center">
                 {resizeList.length === 0 ? (
                   <p style={{color:'orangered'}}>Currently, No data to show. Resize the window to check.</p>
                 ) : (
@@ -91,7 +88,6 @@ const WindowSizeTracker = ({ desc }) => {
                   );
                 })}
               </div>
-            </div>
           )}
         <div>
         <p>Topics used:</p>
