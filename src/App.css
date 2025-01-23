@@ -1,0 +1,19 @@
+/* These are related to components that hold examples*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}.example-container{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  padding:20px;
+}
+.examples{
+  list-style: none;
+}
+.examples li{
+  margin-top:20px;
+  border: 2px solid #bdbdbd;
+}
